@@ -21,6 +21,5 @@ This project is a **handwritten digit classifier** built using **TensorFlow.js**
 ## 🔧 How to Run Locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/mnist-classifier.git
-
+   git clone https://github.com/Abhijeet641/MNIST-Classifier.git
 >>>>>>> 9d38a89750e3eb19daf17ff8aebdcb963b7a8773
