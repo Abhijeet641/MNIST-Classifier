@@ -16,8 +16,7 @@ This project is a **handwritten digit classifier** built using **TensorFlow.js**
 - **JavaScript**: Functionality and TensorFlow.js integration.
 - **TensorFlow.js**: Deep learning in the browser.
 
-## 📸 Screenshot
-![App Screenshot](https://via.placeholder.com/800x400?text=Add+Your+Project+Screenshot+Here)
+
 
 ## 🔧 How to Run Locally
 1. Clone this repository:
