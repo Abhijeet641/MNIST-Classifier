@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+    <link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced MNIST Classifier</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        canvas {
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        .accuracy-display {
+            margin-top: 10px;
+        }
+        .prediction-display {
+            margin-top: 20px;
+        }
+        .draw-instruction {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Handwritten Digit Classifier</h1>
+    <div class="draw-instruction">
+        DRAW WHATEVER, SAVE ANYWHERE
+    </div>
+    <canvas id="canvas" width="680" height="480"></canvas>
+    <div class="controls">
+        <input type="number" id="expectedValue" placeholder="Expected value" />
+        <button onclick="predictAndCheck()">Predict & Check</button>
+        <button onclick="clearCanvas()">Clear</button>
+        <button onclick="saveCanvas()">Save Drawing</button>
+        <button onclick="predict()">Predict</button>
+    </div>
+    <div class="prediction-display">
+        <p id="result">Prediction: <strong>-</strong></p>
+        <p id="accuracy" class="accuracy-display">Accuracy: <strong>-</strong></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
